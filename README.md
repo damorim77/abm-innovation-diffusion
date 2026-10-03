@@ -2,9 +2,6 @@
 
 [![Next.js](https://img.shields.io/badge/Next.js-16-black)](https://nextjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-strict-blue)](https://www.typescriptlang.org/)
-[![ABM](https://img.shields.io/badge/ABM-Schramm_2010-purple)](#)
-[![Canvas](https://img.shields.io/badge/Canvas-2D_puro-orange)](#)
-[![Worker](https://img.shields.io/badge/Worker-simula%C3%A7%C3%A3o_isolada-teal)](#)
 [![Vercel](https://img.shields.io/badge/Vercel-production-black)](https://abm-innovation-diffusion.vercel.app)
 
 > ### 🟢 Live Demo
