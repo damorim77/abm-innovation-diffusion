@@ -56,7 +56,7 @@ export function WorldCanvas({
         ctx.font = "12.5px var(--font-sans), system-ui, sans-serif"
         ctx.textAlign = "center"
         ctx.fillText(
-          "Clique em Initialize para instanciar consumidores e marcas",
+          "Clique em Setup para instanciar consumidores e marcas",
           w / 2,
           h / 2
         )

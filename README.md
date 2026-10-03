@@ -8,7 +8,7 @@
 >
 > ## [Abrir: abm-innovation-diffusion.vercel.app](https://abm-innovation-diffusion.vercel.app)
 >
-> Clique **Initialize**, depois **Run Simulation** — suba **Velocidade** para
+> Clique **Setup**, depois **Run Simulation** — suba **Velocidade** para
 > 600 t/s ou use **Avanço rápido** para ver as curvas-S de cada marca em segundos.
 
 ![GIF de demo: 1.000 agentes difundindo 4 marcas no mundo toroidal, painel mostrando tick, ano, adotantes por marca e curvas-S de difusão](docs/assets/demo.gif)
@@ -65,7 +65,7 @@ flowchart TD
 
 ## Controles
 
-- **Initialize / Run Simulation / Pausar–Retomar / Avanço rápido / Reset**
+- **Setup / Run Simulation / Pausar–Retomar / Avanço rápido / Reset**
 - **Velocidade** (5–600 ticks/s, ou avanço rápido em lotes até o fim)
 - **Painel de parâmetros**: ambiente, 3 segmentos, 4 marcas, pesos do CAT
 - **Mundo da Simulação** (Canvas: cor = segmento, depois = marca adotada)
@@ -76,7 +76,7 @@ flowchart TD
 
 Alterar qualquer parâmetro com a simulação em andamento **pausa e marca o
 estado como stale** ("Parâmetros alterados — reinicialize"): é preciso clicar
-**Initialize** de novo — sem fast-forward fantasma. Antes da entrada da
+**Setup** de novo — sem fast-forward fantasma. Antes da entrada da
 primeira marca no mercado, os agentes **apenas se movem** (sem encontros nem
 adoções). Comportamento esperado, não bug.
 
@@ -101,7 +101,7 @@ npm run build                      # build Next/Turbopack de produção
 ```text
 app/page.tsx                              # página + orquestração dos controles
 app/layout.tsx                            # layout, fontes, metadata
-components/AppHeader.tsx                  # status, velocidade, Initialize/Run/Pausar/Avanço/Reset
+components/AppHeader.tsx                  # status, velocidade, Setup/Run/Pausar/Avanço/Reset
 components/StatusStrip.tsx                # tick, ano, adotantes
 components/ParamSlider.tsx                # slider reutilizável do painel
 components/simulation/ConfigPanel.tsx     # ambiente, segmentos, marcas, pesos CAT
@@ -118,6 +118,6 @@ worker/simulation.worker.ts               # loop com acumulador + snapshots tran
 ## Créditos
 
 Modelo de Schramm, Trainor, Shanker & Hu, "An agent-based diffusion model
-for a mobilized renewable energy technology" — *Decision Support Systems*
+with consumer and brand agents" — *Decision Support Systems*, 50(1), 234–242
 (2010). Implementação própria em TypeScript/Next.js, sem dependência de
 framework de ABM.

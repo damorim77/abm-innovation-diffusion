@@ -52,10 +52,18 @@ export function AppHeader({
         </div>
         <div>
           <h1 className="text-sm leading-tight font-semibold tracking-tight">
-            Console de Difusão ABM
+            Simulador de Difusão da Inovação usando ABM
           </h1>
           <p className="text-[11px] leading-tight text-muted-foreground">
-            Schramm, Trainor, Shanker & Hu · Decision Support Systems (2010)
+            <a
+              href="https://www.sciencedirect.com/science/article/abs/pii/S0167923610001247"
+              target="_blank"
+              rel="noreferrer"
+              className="hover:text-primary hover:underline"
+              title="Schramm, Trainor, Shanker & Hu (2010). An agent-based diffusion model with consumer and brand agents. Decision Support Systems, 50(1), 234–242."
+            >
+              Schramm et al., 2010
+            </a>
           </p>
         </div>
       </div>
@@ -99,7 +107,7 @@ export function AppHeader({
 
         <Button onClick={onInit} variant="outline" size="sm">
           <RotateCcw className="size-3.5" aria-hidden="true" />
-          Initialize
+          Setup
         </Button>
         {running ? (
           <Button onClick={onPause} size="sm">

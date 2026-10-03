@@ -39,11 +39,6 @@ export function BrandsConfig({
               aria-hidden="true"
             />
             <span className="text-[11px] font-semibold">Marca {brand.id}</span>
-            {brand.marketEntry === 0 && (
-              <span className="ml-auto rounded-full bg-primary/15 px-1.5 py-px text-[9px] font-medium text-primary">
-                pioneira
-              </span>
-            )}
           </div>
           {FIELDS.map((f) => (
             <ParamSlider

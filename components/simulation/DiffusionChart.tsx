@@ -38,7 +38,7 @@ export function DiffusionChart({ data }: { data: ChartPoint[] }) {
     return (
       <div className="flex h-full items-center justify-center px-8 text-center text-sm text-muted-foreground">
         As curvas de difusão (marcas A–D e categoria) aparecem aqui após
-        Initialize + Run.
+        Setup + Run.
       </div>
     )
   }

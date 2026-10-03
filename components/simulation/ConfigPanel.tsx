@@ -60,17 +60,6 @@ export function ConfigPanel({
       </Section>
 
       <Section
-        icon={Scale}
-        title="Pesos do CAT"
-        hint="CAT = Σ wᵢ × índiceᵢ · com w = 1 reproduz a soma do modelo original."
-      >
-        <CatWeightsConfig
-          value={params.catWeights}
-          onChange={(catWeights) => onChange({ ...params, catWeights })}
-        />
-      </Section>
-
-      <Section
         icon={Users}
         title="Consumidores"
         hint="Sensibilidade média por segmento; cada agente amostra U(média ± 0.1)."
@@ -90,6 +79,17 @@ export function ConfigPanel({
           value={params.brands}
           onChange={(brands) => onChange({ ...params, brands })}
           ticksPerYear={params.environment.ticksPerYear}
+        />
+      </Section>
+
+      <Section
+        icon={Scale}
+        title="Pesos do CAT"
+        hint="CAT = Σ wᵢ × índiceᵢ · com w = 1 reproduz a soma do modelo original."
+      >
+        <CatWeightsConfig
+          value={params.catWeights}
+          onChange={(catWeights) => onChange({ ...params, catWeights })}
         />
       </Section>
     </div>
